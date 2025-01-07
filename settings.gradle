@@ -8,14 +8,17 @@ pluginManagement {
             }
         }
         mavenCentral()
+        maven { url 'https://jitpack.io' }
         gradlePluginPortal()
     }
 }
+// dependency 的依赖库地址
 dependencyResolutionManagement {
     repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
     repositories {
         google()
         mavenCentral()
+        maven { url 'https://jitpack.io' }
     }
 }
 
