@@ -5,7 +5,7 @@ plugins {
 
 android {
     namespace 'com.zhouguan.toastfree'
-    compileSdk 34
+    compileSdk 35
 
     defaultConfig {
         applicationId "com.zhouguan.toastfree"
@@ -39,6 +39,9 @@ dependencies {
     implementation libs.material
     implementation libs.androidx.activity
     implementation libs.androidx.constraintlayout
+
+    implementation(project(path: ":toastfree"))
+
     testImplementation libs.junit
     androidTestImplementation libs.androidx.junit
     androidTestImplementation libs.androidx.espresso.core
